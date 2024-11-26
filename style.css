@@ -80,14 +80,10 @@ li {
     margin-top: 30px;
 }
 
-/* Links */
-a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Responsive Design */
