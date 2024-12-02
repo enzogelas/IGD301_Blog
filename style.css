@@ -11,7 +11,15 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
-    margin: 20px;
+    margin: 0px;
+
+    display: flex;
+    flex-direction:row;
+}
+
+#MAIN_DIV {
+    width: 100%;
+    margin-left: 10%;
 }
 
 /* Header Styling */
@@ -71,13 +79,43 @@ li {
     margin-bottom: 10px;
 }
 
-/* Homework Section Styling */
-#homework-1 {
+/* Work sections styling */
+.work {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 30px;
+}
+
+#navigation {
+    position: fixed;
+
+    background-color: rgb(120,200,240);
+
+    width: 10%;
+    height: 100%;
+
+    padding: 10px;
+
+    box-shadow: 0 0 8px rgb(120,200,240);
+}
+
+
+.navigation-title {
+    font-size: 1rem;
+    color: rgb(0,80,130);
+}
+
+.navigation-link {
+    color: white;
+    text-decoration: none;
+    
+    word-wrap: break-word;
+}
+
+.navigation-link:hover {
+    color: rgb(0,0,40)
 }
 
 img {
@@ -86,17 +124,3 @@ img {
     margin-right: auto;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    #homework-1 {
-        padding: 15px;
-    }
-}
