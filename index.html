@@ -6,7 +6,8 @@
     <nav id="navigation">
         <a href="#title" class="navigation-link">Home</a>
         <h6 class="navigation-title">Homeworks</h6>
-        <a href="#homework-1" class="navigation-link">Homework 1</a>            
+        <a href="#homework-1" class="navigation-link">Homework 1</a>
+        <a href="#homework-2" class="navigation-link">Homework 2</a>            
         <h6 class="navigation-title">Labs</h6>
         <a href="#lab-1" class="navigation-link">Lab 1</a>            
     </nav>
@@ -65,6 +66,54 @@
             Thus, the CAVE system should be considered closer to the Augmented Reality :
         </p>
         <img src="images/CAVE_position_several_people.png" width="1000px" height="120px">
+    </div>
+    <div id="homework-2" class="work">
+        <h3>Homework 2</h3>
+        <h4>VR Selection Techniques</h4>
+        <p>The goal of this homework is to present 3 different VR selection techniques and classify them.</p>
+        <h5>FistPointer</h5>
+        <p>I saw this selection technique on this <a href="https://www.youtube.com/watch?v=Bg-5qlV5BXg&t=22s&pp=ygULZmlzdHBvaW50ZXI%3D">video</a>. 
+        It comes from the paper : <em>"FistPointer: Target Selection Technique using Mid-air Interaction for Mobile VR Environment"</em> (Unfortunately, I did not find a free access to the PDF.)
+        </p>
+        <p>This technique has been designed for use in a mobile VR environment, where there is no hand controller. The user moves his hands, with thumbs up, to control the point to target on the screen. When he's satisfied, he lowers his his thumb to confirm.</p>
+        <img src="images/fistPointer_thumbUp.png">
+        <img src="images/fistPointer_thumbDown.png">
+        <ul>
+            <li>Reach : Cause this technique is made for 2D environment, it's not relevant to talk about selection reach.</li>
+            <li>Cardinality : Single. The FistPointer only concerns the object present under the controlled target.</li>
+            <li>Refinement : There is no refinement.</li>
+        </ul>
+        <h5>GazeRayCursor</h5>
+        <p>
+            This selection techniques comes from the paper : <a href="https://dl.acm.org/doi/pdf/10.1145/3611659.3615693?casa_token=k7wS2QAM47sAAAAA:FJ0d-FPuO1VsFpmUdh0IdojVrrslv9ce3kjx1Q6JPA1aXKCdOxexUnan3zLaBdeDAKcMxXJNqkY" style="text-decoration: none; font-style: italic;">"GazeRayCursor: Facilitating Virtual Reality Target Selection by Blending Gaze and Controller Raycasting"</a>
+            and is presented in this <a href="https://www.youtube.com/watch?v=wJgQk9NcqWM&t=83s&pp=ygUNZ2F6ZXJheWN1cnNvcg%3D%3D">video</a>.
+        </p>
+        <p>The idea is to combine gaze direction and ray direction casted by the controller to determine the targeted point.</p>
+        <img src="images/gazeRayCursor.png">
+        <p>The controller cast a ray and the user moves his eyes to adjust the selction along this ray by looking more or less far. In the following image, we see the ray casted and the red point represent the guessed intersection point between this ray and the user's gaze.</p>
+        <img src="images/gazeRayCursor-example.png">
+        <ul>
+            <li>Reach : Infinite. The reach is infinite, like in standard raycasting. It is even less limited than this cause it overcomes occlusion of far objects.</li>
+            <li>Cardinality : Single.</li>
+            <li>Refinement : There is a continuous refinement. In the video, we see that the user can adjust his controller and gaze until the right object is selected.</li>
+        </ul>
+        <h5>Slicing Volume</h5>
+        <p>
+            This selection techniques comes from the paper : <a href="https://discovery.ucl.ac.uk/id/eprint/10107943/1/Slicing-Volume_IEEEVR20.pdf" style="text-decoration: none; font-style: italic;">"Slicing-Volume: Hybrid 3D/2D Multi-target Selection Technique for
+                Dense Virtual Environments "</a>
+            and is presented in this <a href="https://www.youtube.com/watch?v=yULQYJzEqv4&t=48s&pp=ygURc2xpY2luZyB2b2x1bWUgdnI%3D">video</a>.
+        </p>
+        <p>
+            The idea is to select all elements in a parallelepiped. The dimensions of this parallelepiped can be adjusted by the user.
+        </p>
+        <img src="images/slicingVolume-tablet.jpg">
+        <p>The user can then move the tablet and visualize what's inside the parallelepiped.</p>
+        <img src="images/slicingVolume-example.jpg">
+        <ul>
+            <li>Reach : Scaled. The virtual tablet to select the volume is held by hand, but the user can modify the dimensions of the selected parallelepiped.</li>
+            <li>Cardinality : Multiple. All elements in the parallelepiped are selected.</li>
+            <li>Refinement : There is a continuous refinement. The position and the dimensions of the parallelepiped can be adjusted at every moment. We could even talk about a "continuous selection"</li>
+        </ul>
     </div>
     <div id="lab-1" class="work">
         <h3>Lab 1</h3>
