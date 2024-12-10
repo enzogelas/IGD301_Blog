@@ -99,7 +99,7 @@ li {
     /* Border style */
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
@@ -113,7 +113,7 @@ li {
 
     padding: 10px;
 
-    box-shadow: 0 0 8px rgb(120,200,240);
+    box-shadow: 0 0 12px rgb(70, 130, 160);
 
     word-wrap: break-word;
 }
@@ -136,8 +136,10 @@ li {
 
 img {
     display: block;
+    width: auto;
     max-width: 80%;
     height: auto;
+    max-height: 300px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
