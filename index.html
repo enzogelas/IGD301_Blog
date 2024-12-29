@@ -138,7 +138,7 @@
     </div>
     <div id="lab-1" class="work">
         <h3>Lab 1</h3>
-        <h4> Setting up the blog</h4>
+        <h4>Setting up the blog</h4>
         <p>To create my blog, I first wanted to use hugo as adviced by the course. 
             I finally prefered to do the blog in my own html/css because I already knew quite a bit about these languages.
             The style is simple, with a navigation bar on the left and the content on the right, all in a single page.
@@ -157,6 +157,63 @@
         <img src="images/unity_hub_create_first_project.jpg">
         <p>It helped me to learn how to navigate into the Unity editor, create new objects in my scene, apply physics, add characters and objects (The tutorial gives a lot of prefabs to fill the scene)</p>
         <img src="images/unity_first_tutorial.jpg">
+    </div>
+    <div id="lab-2" class="work">
+        <h3>Lab 2</h3>
+        <h4>Roll-a-Ball game</h4>
+        <p>
+            For this second lab, we had to create a simple Roll-a-Ball game by following the <a href="https://learn.unity.com/project/roll-a-ball">tutorial</a> on the Unity website. 
+            I'll depict the different steps I followed to create the game.
+        </p>
+
+        <h5>Step 1 : Set up the environment</h5>
+        <p>
+            I created a new 3D project using the universal 3D template.
+        </p>
+        <img src="images/lab2-step1-createProject.jpg">
+        <p>Here is the list of my projects after creating this one.</p>
+        <img src="images/lab2-step1-listOfProjects.jpg">
+        <p>Once in my newly created project, the tutorial suggest us to choose the default layout of the editor, suitable for beginners.</p>
+        <p>
+            Then, we must create our scene and add the first objects in it : the ground (a plane) and the player (a sphere).
+            We also have to create materials to give them a color and an aspect. We basically just choose the color (Base Map) and the smoothness of the material, as shown in the following image :
+        </p>
+        <img src="images/lab2-step1-createMaterial.jpg">
+        <p>We then apply it by dragging it on the object.</p>
+
+        <h5>Step 2 : Move the Player</h5>
+        <p>In this step, we learn how to move the player by writing our first C# scripts.</p>
+        <p>First, our player has to be considered as a rigid body, so we must add a RigidBody component to it so we can later apply forces to it.</p>
+        <img src="images/lab2-step2-addRigidBody.jpg">
+        <p>We must then add an Input Player component to acces to key actions. Finally, we write a script to retrieve key actions and apply forces to the player in consequence.</p>
+        <video src="videos/lab2-step2-demo.mp4" controls></video>
+
+        <h5>Step 3 : Move the camera</h5>
+        <p>The goal of this step is to place the camera as we want and write a new script to adapt the camera movement to the player movement.</p>
+        <video src="videos/lab2-step3-demo.mp4" controls></video>
+
+        <h5>Step 4 : Set up the play area</h5>
+        <p>In this step, we add walls to define the play area.</p>
+        <video src="videos/lab2-step4-demo.mp4" controls></video>
+
+        <h5>Step 5 : Create collectibles</h5>
+        <p>We start to implement the mechanics of the game. The player will have to collect pickups to win. So we start by adding them to the game area. We also them an rotating animation.</p>
+        <video src="videos/lab2-step5-demo1.mp4" controls></video>
+        <p>We then add conditions to make the collectibles disappear on collision.</p>
+        <video src="videos/lab2-step5-demo2.mp4" controls></video>
+
+        <h5>Step 6 : Display score and text</h5>
+        <p>We want to display the number of pickups the player has to collect to win, and text for win.</p>
+        <video src="videos/lab2-step6-demo.mp4" controls></video>
+
+        <h5>Step 7 : Create an ennemy</h5>
+        <p>On this almost last step, we want to create an ennemy that chases the player.</p>
+        <video src="videos/lab2-step7-chase.mp4" controls></video>
+        <p>Then, we add more obstacles (static or dynamic) and refine the scripts so the player loses when the enemy catches it. And here is the final game :</p>
+        <video src="videos/lab2-finalGame.mp4" controls></video>
+
+        <h5>Step 8 : Build the game</h5>
+        <p>The very last step is to build the game for the computer. For that, we follow the instructions in the Unity tutotrial.</p>
     </div>
 
     </div>
