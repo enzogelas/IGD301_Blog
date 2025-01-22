@@ -7,11 +7,17 @@
         <a href="#title" class="navigation-link">Home</a>
         <h6 class="navigation-title">Homeworks</h6>
         <a href="#homework-1" class="navigation-link">Homework 1</a>
-        <a href="#homework-2" class="navigation-link">Homework 2</a>      
-        <a href="#homework-3" class="navigation-link">Homework 3</a>        
+        <br>
+        <a href="#homework-2" class="navigation-link">Homework 2</a>  
+        <br>    
+        <a href="#homework-3" class="navigation-link">Homework 3</a> 
+        <br>        
         <h6 class="navigation-title">Labs</h6>
-        <a href="#lab-1" class="navigation-link">Lab 1</a>        
+        <a href="#lab-1" class="navigation-link">Lab 1</a>  
+        <br>      
         <a href="#lab-2" class="navigation-link">Lab 2</a> 
+        <br>
+        <a href="#lab-3" class="navigation-link">Lab 3</a>
     </nav>
 
     <div id="MAIN_DIV">
@@ -136,6 +142,37 @@
             <li>As a vehicle in an open world game (like GTA)</li>
         </ul>
     </div>
+    <!-- Homework 4
+    <div id="homework-4"class="work">
+        <h3>Homework 4</h3>
+        <h4>Selecting objects in a supermarket</h4>
+        <h5>Flow Ray</h5>
+        <p>This selection technique is close to the raycasting. The goal is to allow the user to select  an item by poiting approximately at it, not precisely, and so spend less time.</p>
+        <img src="images/hw4-flowRay.jpg">
+        <p>The user's left hand cast a ray. All items pretty close to the ray are arranged in a circle aroung the hand. The user can then select one of them by pointing it with the right hand.</p>
+        <p>Considering what we did at the beginning, we would like to compare how fast this technique is compared to raycasting.</p>
+        <br>
+        <h5>Filtering</h5>
+        <p>The goal of this technique is to allow user to do a preselection on the items in the supermarket, like he could do on a computer with window menus.</p>
+        <img src="images/hw4-filtering.jpg">
+        <p>The user have access, in his field of vision, to filter menus. He can check properties for the items he's searching. In response, some items corresponding to these properties are displayed at the right of his field of vision. He can them select them.</p>
+        <p>To evaluate this technique, we would consider how many filters are used and how much time does the user spend on filters. We could compare then this time with the time for raycasting and direct selection to determine of our technique is efficient.</p>
+        <br>
+        <h5>Proximity selector</h5>
+        <p>This technique is close to direct selection. It is made to try to be faster.</p>
+        <img src="images/hw4-proximitySelector.jpg">
+        <p>At every moment, the item closest to the left hand / the right hand are highlighted in two different colors. The user can press a button on a controller to select the corresponding item.</p>
+        <p>As we did for our first technique, we would like to measure how fast this technique is compared to direct selection.</p>
+        <br>
+        <h5>Bonus technique : Voice Command</h5>
+        <p>We add a last technique (that we considered to hard to implement, but very interesting)</p>
+        <p>This technique is based on the user's voice to be very fast.</p>
+        <img src="images/hw4-voiceCommand.jpg">
+        <p>At every moment, the items close to the gaze of the user are numbered and the user can say a number to select the corresponding item.</p>
+        <p>It would be interesting to see if the users are at ease with this selection technique and how fast they are.</p>
+    </div>
+    -->
+
     <div id="lab-1" class="work">
         <h3>Lab 1</h3>
         <h4>Setting up the blog</h4>
@@ -216,5 +253,21 @@
         <p>The very last step is to build the game for the computer. For that, we follow the instructions in the Unity tutotrial.</p>
     </div>
 
+    <div id="lab-3" class="work">
+        <h3>Lab 3</h3>
+        <h4>Roll-a-Ball VR</h4>
+        <p>For this lab, we had to adapt the Roll-a-Ball game in a VR game</p>
+        <h5>First solution</h5>
+        <p> To adapt the game, we can just change the input to read the left (or right) controller thumbstick. </p>
+        <h6>Intermediary step</h6>
+        <p>To work with VR in Unity, Imported the XR Interaction Toolkit via Window > Package Manager and imported the Starter Assets, that contains several useful things.</p>
+        <img src="images/lab3-importToolkit.jpg">
+        <h6>Resume</h6>
+        <p>Then, we can map the thumbstick, by adding this to the player controller script :</p>
+        <img src="images/lab3-code1.jpg">
+        <p>And modifying the FixedUpdate() function of the sphere player :</p>
+        <img src="images/lab3-code2.jpg">
+        <p>Finally, we can test the game in VR.</p>
+        <video src="videos/lab3-demo.mp4" controls></video>
     </div>
 </body>
